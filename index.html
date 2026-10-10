@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10243a" />
+  <meta name="description" content="A multilingual cyber awareness campaign for rural communities." />
+  <title>Cyber Saathi | Stay Alert, Stay Safe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Cyber Saathi home">
+      <span class="brand-mark" aria-hidden="true">🛡️</span>
+      <span class="brand-copy"><strong>Cyber Saathi</strong><small data-i18n="brandTag">Digital safety for every village</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#learn" data-i18n="navLearn">Learn</a>
+      <a href="#safety" data-i18n="navSafety">Safety tips</a>
+      <a href="#quiz" data-i18n="navQuiz">Quiz</a>
+      <a href="#feedback" data-i18n="navFeedback">Feedback</a>
+    </nav>
+
+    <div class="language-switch" aria-label="Choose language">
+      <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="hi" aria-pressed="false">हिंदी</button>
+      <button type="button" class="lang-btn" data-lang="mr" aria-pressed="false">मराठी</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span><span data-i18n="heroEyebrow">COMMUNITY CYBER AWARENESS CAMPAIGN</span></p>
+        <h1><span data-i18n="heroTitle1">Pause. Think.</span><span class="gradient-text" data-i18n="heroTitle2">Stay Cyber Safe.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Simple digital safety lessons for families, farmers, students and small businesses in rural communities.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#learn"><span data-i18n="startLearning">Start learning</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#quiz" data-i18n="takeQuiz">Take the quick quiz</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span><span data-i18n="heroNote">Easy language · Everyday examples · Free awareness</span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Cyber safety illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="big-shield"><span>✓</span></div>
+        <div class="float-card float-otp"><span class="float-icon">🔐</span><span><strong data-i18n="otpCardTitle">Keep OTP private</strong><small data-i18n="otpCardText">Your secret stays yours</small></span></div>
+        <div class="float-card float-payment"><span class="float-icon">📱</span><span><strong data-i18n="paymentCardTitle">Check every payment</strong><small data-i18n="paymentCardText">Tap only when sure</small></span></div>
+        <div class="art-spark spark-one">✦</div><div class="art-spark spark-two">✧</div>
+        <p class="art-caption" data-i18n="artCaption">Smart choices build a safer community.</p>
+      </div>
+    </section>
+
+    <section class="emergency-strip" aria-label="Report cyber financial fraud">
+      <div class="emergency-copy"><span class="emergency-icon" aria-hidden="true">☎</span><div><strong data-i18n="fraudTitle">Lost money in an online financial fraud?</strong><p data-i18n="fraudText">Call 1930 promptly and report it on the official cybercrime portal.</p></div></div>
+      <div class="emergency-actions"><a class="hotline-link" href="tel:1930">1930 <span aria-hidden="true">↗</span></a><a class="portal-link" href="https://www.cybercrime.gov.in/" target="_blank" rel="noopener noreferrer" data-i18n="reportOnline">Report online</a></div>
+    </section>
+
+    <section class="section-wrap learn-section" id="learn">
+      <div class="section-heading">
+        <p class="eyebrow"><span data-i18n="learnEyebrow">KNOW THE WARNING SIGNS</span></p>
+        <h2 data-i18n="learnTitle">Spot the scam before it starts.</h2>
+        <p data-i18n="learnIntro">Fraudsters often create fear, excitement or urgency. Slow down and check first.</p>
+      </div>
+
+      <div class="lesson-grid">
+        <article class="lesson-card card-purple"><div class="lesson-icon">🔑</div><p class="card-kicker" data-i18n="lessonOneTag">SECRET INFORMATION</p><h3 data-i18n="lessonOneTitle">OTP & PIN scams</h3><p data-i18n="lessonOneText">Never share your OTP, UPI PIN, password or ATM PIN—even with someone claiming to be from a bank.</p><span class="card-number">01</span></article>
+        <article class="lesson-card card-mint"><div class="lesson-icon">💸</div><p class="card-kicker" data-i18n="lessonTwoTag">DIGITAL PAYMENTS</p><h3 data-i18n="lessonTwoTitle">UPI & QR tricks</h3><p data-i18n="lessonTwoText">You do not need to enter your UPI PIN to receive money. Check the name and amount before paying.</p><span class="card-number">02</span></article>
+        <article class="lesson-card card-peach"><div class="lesson-icon">🔗</div><p class="card-kicker" data-i18n="lessonThreeTag">UNKNOWN LINKS</p><h3 data-i18n="lessonThreeTitle">Fake links & messages</h3><p data-i18n="lessonThreeText">Avoid suspicious links promising prizes, urgent KYC updates, free gifts or instant benefits.</p><span class="card-number">03</span></article>
+        <article class="lesson-card card-blue"><div class="lesson-icon">🧾</div><p class="card-kicker" data-i18n="lessonFourTag">OFFERS & IDENTITY</p><h3 data-i18n="lessonFourTitle">Fake jobs & schemes</h3><p data-i18n="lessonFourText">Verify job offers, subsidies and government schemes through official websites or offices. Never pay a stranger to “release” a benefit.</p><span class="card-number">04</span></article>
+      </div>
+    </section>
+
+    <section class="safety-section" id="safety">
+      <div class="section-wrap safety-layout">
+        <div class="safety-copy">
+          <p class="eyebrow"><span data-i18n="safetyEyebrow">YOUR EVERYDAY DIGITAL SHIELD</span></p>
+          <h2 data-i18n="safetyTitle">Five habits. Better protection.</h2>
+          <p class="safety-intro" data-i18n="safetyIntro">You don't need to be a technology expert. Start with these small habits and share them with your family.</p>
+          <div class="safety-list">
+            <div class="safety-item"><span>01</span><div><strong data-i18n="tipOneTitle">Use a strong screen lock</strong><p data-i18n="tipOneText">Set a PIN or password that others cannot easily guess.</p></div></div>
+            <div class="safety-item"><span>02</span><div><strong data-i18n="tipTwoTitle">Verify before you trust</strong><p data-i18n="tipTwoText">Call the person or organisation using a known, official number.</p></div></div>
+            <div class="safety-item"><span>03</span><div><strong data-i18n="tipThreeTitle">Download safely</strong><p data-i18n="tipThreeText">Install apps from trusted app stores; avoid unknown APK files.</p></div></div>
+            <div class="safety-item"><span>04</span><div><strong data-i18n="tipFourTitle">Keep your phone updated</strong><p data-i18n="tipFourText">Install updates and review app permissions.</p></div></div>
+            <div class="safety-item"><span>05</span><div><strong data-i18n="tipFiveTitle">Tell someone you trust</strong><p data-i18n="tipFiveText">Ask a trusted family member or bank branch when a message feels suspicious.</p></div></div>
+          </div>
+        </div>
+
+        <aside class="pause-card">
+          <div class="pause-top"><span class="pause-symbol">⏸</span><span class="pause-label" data-i18n="pauseLabel">THE 10-SECOND PAUSE</span></div>
+          <h3 data-i18n="pauseTitle">Before you tap, ask yourself:</h3>
+          <div class="pause-question"><span>?</span><p data-i18n="pauseQuestionOne">Do I know who sent this?</p></div>
+          <div class="pause-question"><span>?</span><p data-i18n="pauseQuestionTwo">Are they asking for money or a secret code?</p></div>
+          <div class="pause-question"><span>?</span><p data-i18n="pauseQuestionThree">Can I verify this through an official source?</p></div>
+          <div class="pause-bottom"><span aria-hidden="true">✦</span><p data-i18n="pauseBottom">If anything feels wrong, stop. Do not reply, pay or share details.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-wrap quiz-section" id="quiz">
+      <div class="section-heading centered-heading">
+        <p class="eyebrow"><span data-i18n="quizEyebrow">LEARN BY DOING</span></p>
+        <h2 data-i18n="quizTitle">Are you a Cyber Saathi?</h2>
+        <p data-i18n="quizIntro">Answer five everyday situations and check what you have learned.</p>
+      </div>
+      <div class="quiz-panel" id="quizPanel">
+        <div class="quiz-meta"><span class="quiz-tag" data-i18n="quickCheck">QUICK CHECK</span><span id="questionCount">Question 1 of 5</span></div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <h3 class="quiz-question" id="quizQuestion">Question will appear here</h3>
+        <div class="quiz-options" id="quizOptions"></div>
+        <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+        <button class="button button-primary quiz-next" id="quizNext" type="button" hidden><span data-i18n="nextQuestion">Next question</span><span aria-hidden="true">→</span></button>
+        <div class="quiz-result" id="quizResult" hidden>
+          <div class="result-icon" id="resultIcon">🎉</div>
+          <p class="result-kicker" data-i18n="quizComplete">QUIZ COMPLETE</p>
+          <h3 id="resultScore">0 / 5</h3>
+          <p id="resultMessage"></p>
+          <button class="button button-primary" id="quizRestart" type="button"><span data-i18n="tryAgain">Try again</span><span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+      <p class="quiz-footnote"><span aria-hidden="true">💡</span> <span data-i18n="quizFootnote">This quiz is for awareness and learning, not an official certification.</span></p>
+    </section>
+
+    <section class="feedback-section" id="feedback">
+      <div class="section-wrap feedback-layout">
+        <div class="feedback-copy">
+          <p class="eyebrow"><span data-i18n="feedbackEyebrow">HELP US IMPROVE</span></p>
+          <h2 data-i18n="feedbackTitle">Your feedback matters.</h2>
+          <p data-i18n="feedbackIntro">Was this campaign easy to understand? Tell us what helped and what we can improve for your community.</p>
+          <div class="feedback-promise"><span>💬</span><div><strong data-i18n="feedbackPromiseTitle">Simple and respectful</strong><p data-i18n="feedbackPromiseText">Your name is optional. Never include passwords, OTPs, bank details or other private information.</p></div></div>
+        </div>
+        <form class="feedback-form" id="feedbackForm">
+          <div class="form-heading"><span class="form-icon">✉</span><div><h3 data-i18n="formTitle">Share your thoughts</h3><p data-i18n="formSubtitle">A minute is enough.</p></div></div>
+          <label for="visitorName" data-i18n="nameLabel">Name (optional)</label>
+          <input id="visitorName" name="name" type="text" maxlength="60" autocomplete="name" data-i18n-placeholder="namePlaceholder" placeholder="Your name" />
+          <label for="rating" data-i18n="ratingLabel">How useful was this website?</label>
+          <select id="rating" name="rating" required>
+            <option value="" data-i18n="ratingPlaceholder">Choose a rating</option>
+            <option value="5" data-i18n="rating5">5 - Very useful</option>
+            <option value="4" data-i18n="rating4">4 - Useful</option>
+            <option value="3" data-i18n="rating3">3 - Okay</option>
+            <option value="2" data-i18n="rating2">2 - Not very useful</option>
+            <option value="1" data-i18n="rating1">1 - Not useful</option>
+          </select>
+          <label for="feedbackMessage" data-i18n="messageLabel">Your suggestion or comment</label>
+          <textarea id="feedbackMessage" name="message" rows="4" maxlength="500" required data-i18n-placeholder="messagePlaceholder" placeholder="What did you learn? What can be better?"></textarea>
+          <button class="button button-primary submit-button" type="submit"><span data-i18n="submitFeedback">Submit feedback</span><span aria-hidden="true">↗</span></button>
+          <p class="form-privacy" data-i18n="privacyNote">Project demo: feedback is saved only in this browser and is not sent to a server.</p>
+          <p class="form-success" id="formSuccess" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="final-cta section-wrap">
+      <div class="cta-icon">🤝</div><div><h2 data-i18n="ctaTitle">A cyber-safe village starts with you.</h2><p data-i18n="ctaText">Share one safety tip with a friend or family member today.</p></div><a class="button button-light" href="#learn" data-i18n="reviewTips">Review safety tips</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#home">🛡️ Cyber Saathi</a><p data-i18n="footerText">A student awareness project for safer digital habits in rural communities.</p><p class="footer-small"><span data-i18n="footerEmergency">Financial cyber fraud helpline:</span> <a href="tel:1930">1930</a> · <a href="https://www.cybercrime.gov.in/" target="_blank" rel="noopener noreferrer" data-i18n="officialPortal">Official reporting portal</a></p><p class="copyright">© <span id="currentYear">2026</span> Cyber Saathi · <span data-i18n="footerMade">Learn. Verify. Stay safe.</span></p></footer>
+</body>
+</html>
